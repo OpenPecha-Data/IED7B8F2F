@@ -1,0 +1,99 @@
+id: IED7B8F2F
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T14:47:40.098211'
+last_modified: '2022-05-27T14:47:40.098245'
+parser: null
+source_metadata:
+  title: Bhaiṣajyagurupūrvapraṇidhānasūtra
+  language: zh
+  base:
+    f3548:
+      title: §0-4
+      base_file: f3548.txt
+      order: 1
+    fF602:
+      title: §5
+      base_file: fF602.txt
+      order: 2
+    f3667:
+      title: §6
+      base_file: f3667.txt
+      order: 3
+    fB3C4:
+      title: §7
+      base_file: fB3C4.txt
+      order: 4
+    fDC5D:
+      title: §8
+      base_file: fDC5D.txt
+      order: 5
+    fB4B0:
+      title: §9
+      base_file: fB4B0.txt
+      order: 6
+    f85BF:
+      title: §10
+      base_file: f85BF.txt
+      order: 7
+    f1493:
+      title: §11-12
+      base_file: f1493.txt
+      order: 8
+    fB36C:
+      title: §13
+      base_file: fB36C.txt
+      order: 9
+    fC7C0:
+      title: §14
+      base_file: fC7C0.txt
+      order: 10
+    f8777:
+      title: §15
+      base_file: f8777.txt
+      order: 11
+    f6332:
+      title: §16
+      base_file: f6332.txt
+      order: 12
+    f2159:
+      title: §17
+      base_file: f2159.txt
+      order: 13
+    f4451:
+      title: §18
+      base_file: f4451.txt
+      order: 14
+    f84D7:
+      title: §19
+      base_file: f84D7.txt
+      order: 15
+    f4331:
+      title: §20
+      base_file: f4331.txt
+      order: 16
+    f3572:
+      title: §21
+      base_file: f3572.txt
+      order: 17
+    f845E:
+      title: §22
+      base_file: f845E.txt
+      order: 18
+    f005E:
+      title: §23
+      base_file: f005E.txt
+      order: 19
+    f7818:
+      title: Colophon
+      base_file: f7818.txt
+      order: 20
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

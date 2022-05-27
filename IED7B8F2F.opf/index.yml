@@ -1,0 +1,104 @@
+id: 1274446f759d4e3980a9b2d7cb6c770b
+annotation_type: index
+revision: '00001'
+annotations:
+  4c3937ccad404a959e0c5ab1a96007f6:
+    base: f005E.txt
+    span:
+      start: 0
+      end: 90
+  e01031ec67924d2bbec4ba7346488b16:
+    base: f1493.txt
+    span:
+      start: 0
+      end: 308
+  dfddee50bb7041fbb364b5867cd2242a:
+    base: f2159.txt
+    span:
+      start: 0
+      end: 388
+  be1ff429045f4c7da9dd9d7215770276:
+    base: f3548.txt
+    span:
+      start: 0
+      end: 441
+  12bdc9806daf47bb911572e3d858b9a7:
+    base: f3572.txt
+    span:
+      start: 0
+      end: 393
+  a905cb5c8b054b91b7d456a1bbee5967:
+    base: f3667.txt
+    span:
+      start: 0
+      end: 216
+  af3be8214ef6469b9a0c3408aa2f6a83:
+    base: f4331.txt
+    span:
+      start: 0
+      end: 486
+  4f93eb98bab24fcb8fbd47a97890c52e:
+    base: f4451.txt
+    span:
+      start: 0
+      end: 231
+  35260b37ccc041a282e77781c2eea40d:
+    base: f6332.txt
+    span:
+      start: 0
+      end: 446
+  183a020ad8bc4743963103560ff4b4c4:
+    base: f7818.txt
+    span:
+      start: 0
+      end: 22
+  81901d98fd444ef097d9a6e496b51469:
+    base: f845E.txt
+    span:
+      start: 0
+      end: 100
+  8a9ff376d514418590e3539e5db79734:
+    base: f84D7.txt
+    span:
+      start: 0
+      end: 304
+  01ded437fbba4c24915f8961666cfea5:
+    base: f85BF.txt
+    span:
+      start: 0
+      end: 216
+  b5606a79e27c4f9d8780e6a43c0e3231:
+    base: f8777.txt
+    span:
+      start: 0
+      end: 203
+  f32ff60e2e1f4dc380db862bd0f76bf9:
+    base: fB36C.txt
+    span:
+      start: 0
+      end: 274
+  62abd89af8d04f2691017149af653c71:
+    base: fB3C4.txt
+    span:
+      start: 0
+      end: 284
+  37398cd2e6be432ea9da794a81f81b3c:
+    base: fB4B0.txt
+    span:
+      start: 0
+      end: 217
+  bd11c2c3b6ea4ec7b9933fdebe7e4d99:
+    base: fC7C0.txt
+    span:
+      start: 0
+      end: 410
+  78536f1c11754254a89858af6ae25f38:
+    base: fDC5D.txt
+    span:
+      start: 0
+      end: 328
+  7f39c3635ca7452797e5624e4e68732f:
+    base: fF602.txt
+    span:
+      start: 0
+      end: 1023

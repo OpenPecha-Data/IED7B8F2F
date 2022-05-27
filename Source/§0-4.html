@@ -1,0 +1,411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1020' accesskey='1'>Bhaiṣajyagurupūrvapraṇidhānasūtra</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Bhaiṣajyagurupūrvapraṇidhānasūtra<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1020[5046]" value="5046" id="lancheckbox" checked >Sanskrit: Index</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1020[5047]" value="5047" id="lancheckbox" checked >Tibetan: Kj D</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1020[5048]" value="5048" id="lancheckbox" checked >Chinese: T. 449</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1020[5049]" value="5049" id="lancheckbox" checked >Chinese: T. 450</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1020">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1020">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1020'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1020">Search in Bhaiṣajyagurupūrvapraṇidhānasūtra</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1020'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1020'>Bhaiṣajyagurupūrvapraṇidhānasūtra</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1020" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="86769.§0-4|86770.§5|86771.§6|86772.§7|86773.§8|86774.§9|86775.§10|86776.§11-12|86777.§13|86778.§14|86779.§15|86780.§16|86781.§17|86782.§18|86783.§19|86784.§20|86785.§21|86786.§22|86787.§23|86788.Colophon|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86769.§0-4" border=0 hspace=2><a id="href_86769.§0-4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849400&level=1&cid=771369" class="ajax_tree0">§0-4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86770.§5" border=0 hspace=2><a id="href_86770.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849409&level=1&cid=771374" class="ajax_tree0">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86771.§6" border=0 hspace=2><a id="href_86771.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849422&level=1&cid=771387" class="ajax_tree0">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86772.§7" border=0 hspace=2><a id="href_86772.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849427&level=1&cid=771388" class="ajax_tree0">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86773.§8" border=0 hspace=2><a id="href_86773.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849435&level=1&cid=771389" class="ajax_tree0">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86774.§9" border=0 hspace=2><a id="href_86774.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849442&level=1&cid=771390" class="ajax_tree0">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86775.§10" border=0 hspace=2><a id="href_86775.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849447&level=1&cid=771391" class="ajax_tree0">§10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86776.§11-12" border=0 hspace=2><a id="href_86776.§11-12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849453&level=1&cid=771392" class="ajax_tree0">§11-12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86777.§13" border=0 hspace=2><a id="href_86777.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849460&level=1&cid=771394" class="ajax_tree0">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86778.§14" border=0 hspace=2><a id="href_86778.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849464&level=1&cid=771395" class="ajax_tree0">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86779.§15" border=0 hspace=2><a id="href_86779.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849472&level=1&cid=771396" class="ajax_tree0">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86780.§16" border=0 hspace=2><a id="href_86780.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849476&level=1&cid=771397" class="ajax_tree0">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86781.§17" border=0 hspace=2><a id="href_86781.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849487&level=1&cid=771398" class="ajax_tree0">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86782.§18" border=0 hspace=2><a id="href_86782.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849495&level=1&cid=771399" class="ajax_tree0">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86783.§19" border=0 hspace=2><a id="href_86783.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849499&level=1&cid=771400" class="ajax_tree0">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86784.§20" border=0 hspace=2><a id="href_86784.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849502&level=1&cid=771401" class="ajax_tree0">§20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86785.§21" border=0 hspace=2><a id="href_86785.§21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849514&level=1&cid=771402" class="ajax_tree0">§21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86786.§22" border=0 hspace=2><a id="href_86786.§22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849521&level=1&cid=771403" class="ajax_tree0">§22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86787.§23" border=0 hspace=2><a id="href_86787.§23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849523&level=1&cid=771404" class="ajax_tree0">§23
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_86788.Colophon" border=0 hspace=2><a id="href_86788.Colophon" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1020&mid=1849524&level=1&cid=771405" class="ajax_tree0">Colophon
+</td></tr></table>
+<script language=javascript>test('86769.§0-4|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1020&amp;mid=1849400&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1020&amp;cid=771369&amp;mid=1849400&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1020&amp;cid=771369&amp;mid=1849400&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><div class='kilderef' id='7135209'></div><div class='clear'></div><span id='7135209bi' class='paragraph'>
+							§0-4 oṃ namaḥ sarvajñāya | namo bhagavate bhaiṣajyaguruvaiḍūryaprabharājāya tathāgatāya ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><div class='kilderef' id='7135335'></div><div class='clear'></div><span id='7135335bi' class='paragraph'>
+							(2)saṅs rgyas daṅ byaṅ chub sems dpa' thams cad la phyag 'tshal lo ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><div class='kilderef' id='7135461'></div><div class='clear'></div><span id='7135461bi' class='paragraph'>
+							(401a04)藥師如來本願功德經序<br/>(401a05)藥師如來本願經者，致福消災之要法也；曼殊以慈悲之力請說尊號，如來以利物之心盛陳功業；十二大願彰因行之弘遠，七寶莊嚴顯果德之純淨；憶念稱名則眾苦咸脫，祈請供養則諸願皆滿；至於病士求救應死更生，王者攘災轉禍為福；信是消百怪之神符，除九橫之妙術矣。(401a11)昔宋孝武之世，鹿野寺沙門慧簡已曾譯出在世流行，但以梵宋不融、文辭雜糅，致令轉讀之輩多生疑惑。矩早學梵書恒披葉典，思遇此經驗其紕謬；開皇十七年初獲一本，猶恐脫誤未敢即翻，至大業十一年復得二本，更相讎比方為揩定，遂與三藏法師達磨笈多，并大隋翻經沙門法行明則、長順海馭等，於東都洛水南上林園翻經舘重譯此本。深鑑前非方懲後失，故一言出口必三覆乃書，傳度幽旨差無大過；其年十二月八日翻勘方了，仍為一卷。(401a21)所願此經深義人人共解，彼佛名號處處遍聞，十二夜叉念佛恩而護國，七千眷屬承經力以利民，帝祚遐永，群生安樂，式貽來世序云爾。<br/>佛說藥師如來本願經<br/>(401a26)新翻藥師經，大業十二年十二月八日，沙門慧矩等六人，於東都洛水南上林園譯出。此本最定，諸讀誦者願莫更疑，得罪不輕。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><div class='kilderef' id='7135587'></div><div class='clear'></div><span id='7135587bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='7135210bi' class='paragraph'>
+							§1 evaṃ mayā śrutam ekasmin samaye bhagavāñ janapadacaryāṃ caramāṇo 'nupūrveṇa yena vaiśālī mahānagarī tenānuprāpto 'bhūt | tatra khalu bhagavān vaiśālyāṃ viharati sma | vādyasvare vṛkṣamūle&nbsp;</span><span id='7135211bi' class='paragraph'>
+						 mahatā bhikṣusaṃghena sārdham aṣṭabhir bhikṣusahasraiḥ ṣaṭtriṃśadbhiś ca bodhisattvasahasraiḥ sārdhaṃ rājāmātyabrāhmaṇagṛhapatibhir mahatyā ca devanāgayakṣagandharvāsuragaruḍakinnaramahoragamanuṣyāmanuṣyaparṣadā ca parivṛtaḥ puraskṛto dharmaṃ deśayati sma ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='7135336bi' class='paragraph'>
+							'di skad bdag gis thos pa dus gcig na | bcom ldan 'das yul rgyu brgyu źiṅ yaṅs pa can du byon te | yaṅs pa can na rol mo'i sgra can gyi śiṅ ljon pa'i druṅ na&nbsp;</span><span id='7135337bi' class='paragraph'>
+						 dge sloṅ brgyad stoṅ gi dge (2)sloṅ gi dge 'dun chen po daṅ | thabs cig<a class='fotnote cn' name='FN5047cn1' href='#N5047cn1'><sup>1</sup></a>
+ tu bźugs te | byaṅ chub sems dpa' sum khri drug stoṅ daṅ yaṅ thabs gcig tu rgyal po daṅ daṅ | blon po daṅ | bram ze daṅ | khyim bdag rnams daṅ | lha daṅ daṅ | lha ma yin daṅ | nam mkha' ldiṅ daṅ | mi 'am (3)ci daṅ | lto 'phye chen po rnams kyis yoṅs su bskor ciṅ mdun gyis bltas te chos ston to ||&nbsp;</span><div style='' id='1' class='note cn'>1.<a class="internt" name='N5047cn1' href='#FN5047cn1'> Sch: gcig.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135462bi' class='paragraph'>
+							(401b05)如是我聞：一時婆伽婆遊行人間至毘舍離國住樂音樹下，&nbsp;</span><span id='7135463bi' class='paragraph'>
+						 與大比丘眾八千人俱、菩薩三萬六千、國王、大臣、婆羅門、居士、天龍、阿修羅、揵達婆、伽樓茶、緊那羅、摩呼羅伽等，大眾圍遶於前說法。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135588bi' class='paragraph'>
+							(404c15)如是我聞：一時，薄伽梵遊化諸國，至廣嚴城，住樂音樹下。&nbsp;</span><span id='7135589bi' class='paragraph'>
+						 與大苾芻眾八千人俱，菩薩摩訶薩三萬六千，及國王、大臣、婆羅門、居士、天、龍、藥叉、人、非人等，無量大眾，恭敬圍繞，而為說法。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='7135212bi' class='paragraph'>
+							§2 atha khalu mañjuśrīr dharmarājaputro buddhānubhāvenotthāyāsanād ekāṃsam uttarāsaṅgaṃ kṛtvā dakṣiṇaṃ jānumaṇḍalaṃ pṛthivyāṃ pratiṣṭhāpya yena bhagavāṃs tenāñjaliṃ  praṇamya bhagavantam etad avocat |&nbsp;</span><span id='7135213bi' class='paragraph'>
+						 deśayatu bhagavāṃs teṣāṃ tathāgatānāṃ nāmadheyāni pūrvapraṇidhānavistaravibhaṅgaṃ ca yaṃ śrutvā sarvasattvāḥ sarvakarmāvaraṇāni viśodhayeyus teṣāṃ paścime kāle paścime samaye saddharmapratirūpake vartamāne sattvān anugraham upādāya ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='7135338bi' class='paragraph'>
+							de nas saṅs rgyas kyi mthus chos kyi rgyal bu 'jam dpal stan las laṅs te | bla gos phrag pa gcig tu phrag pa gcig tu bgos nas pus mo g.yas pa'i lha ṅa sa la btsugs (4)te | bcom ldan 'das ga la ba de logs su thal mo sbyar ba btud nas bcom ldan 'das la 'di skad ces gsol to ||&nbsp;</span><span id='7135339bi' class='paragraph'>
+						 gaṅ thos pas sems can rnams kyi las kyi sgrib pa yoṅs su byaṅ bar 'gyur ba daṅ | slad ma'i tshe slad ma'i dus su dam pa'i chos ltar (5)bcos pa 'byuṅ ba na | sems can de dag rjes su gzuṅ ba'i slad du de bźin gśegs pa de dag gi mtshan daṅ | sṅon gyi smon lam khyad par rgyas pa bcom ldan 'das kyis bstan du gsol ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135464bi' class='paragraph'>
+							(401b10)爾時，曼殊室利法王子，承佛威神，即從座起，偏露一髆，右膝著地，向婆伽婆合掌曲躬白言：&nbsp;</span><span id='7135465bi' class='paragraph'>
+						 「世尊！唯願演說諸佛名號及本昔所發殊勝大願，令眾生聞已，業障消除，攝受來世正法壞時諸眾生故。」&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135590bi' class='paragraph'>
+							(404c20)爾時，曼殊室利法王子，承佛威神，從座而起，偏袒一肩，右膝著地，向薄伽梵，曲躬合掌，白言：&nbsp;</span><span id='7135591bi' class='paragraph'>
+						 「世尊！惟願演說如是相類諸佛名號，及本大願殊勝功德，令諸聞者業障銷除，為欲利樂像法轉時諸有情故。」&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='7135214bi' class='paragraph'>
+							§3 atha bhagavān mañjuśriye kumārabhūtāya sādhukāram adāt | sādhu sādhu mañjuśrīr yathāpi mahākāruṇiko yas tvam aprameyāṃ karuṇāṃ janayitvā mamādhyeṣase nānākarmāvaraṇenāvṛtānāṃ sattvānām arthāya hitāya sukhāya devamanuṣyāṇām | tena hi tvaṃ mañjuśrīḥ śṛṇu sādhu ca suṣṭhu ca manasikuru bhāṣiṣye |&nbsp;</span><span id='7135215bi' class='paragraph'>
+						 evaṃ bhagavann iti mañjuśrīḥ kumārabhūto bhagavataḥ pratyaśrauṣīt ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='7135340bi' class='paragraph'>
+							de nas bcom ldan 'das kyis 'jam dpal gźon nur gyur pa (6)la legs so źes bya ba byin te | 'jam dpal legs so legs so | 'jam dpal khyod kyis sñiṅ rje dpag tu med pa bskyed nas sems can las kyi sgrib pa sna tshogs kyis bsgribs pa rnams daṅ | lha daṅ mi rnams kyi don daṅ | phan pa daṅ bde ba'i (274b1)phyir gsol ba 'debs pa ni legs so || 'jam dpal de'i phyir legs par rab tu ñon la yid la zuṅ śig daṅ bśad do ||&nbsp;</span><span id='7135341bi' class='paragraph'>
+						 'jam dpal gźon nur gyur pas bcom ldan 'das de bźin no źes gsol nas | bcom ldan 'das kyi ltar ñan pa daṅ |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135466bi' class='paragraph'>
+							(401b15)爾時，婆伽婆讚曼殊室利童子言：「善哉！善哉！曼殊室利大慈悲者，起無量悲，勸請我說，為欲義利種種業障所纏眾生，饒益安樂諸天人故。曼殊室利！當善憶念，聽我所說。」(401b19)&nbsp;</span><span id='7135467bi' class='paragraph'>
+						 時曼殊室利童子樂聽佛說，白言：「唯然，世尊！」&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135592bi' class='paragraph'>
+							(404c25)爾時，世尊讚曼殊室利童子言：「善哉！善哉！曼殊室利！汝以大悲，勸請我說諸佛名號、本願功德，為拔業障所纏有情，利益安樂像法轉時諸有情故。汝今諦聽極善、思惟，當為汝說。」&nbsp;</span><span id='7135593bi' class='paragraph'>
+						 曼殊室利言：「唯然！願說，我等樂聞。」&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='7135216bi' class='paragraph'>
+							§4 bhagavāṃs tasyaitad avocat | asti mañjuśrīḥ pūrvasmin digbhāge ito buddhakṣetrād daśagaṅgānadīvālukāsamāni buddhakṣetrāṇy atikramya vaiḍūryanirbhāsā nāma lokadhātuḥ |&nbsp;</span><span id='7135217bi' class='paragraph'>
+						 tatra bhaiṣajyaguruvaiḍūryaprabho nāma tathāgato 'rhan samyaksaṃbuddho viharati | vidyācaraṇasaṃpannaḥ sugato lokavid anuttaraḥ puruṣadamyasārathiś ca śāstā devānāṃ manuṣyāṇāṃ ca buddho bhagavāṃs tasya khalu punar mañjuśrīr bhagavato bhaiṣajyaguruvaiḍūryaprabhasya tathāgatasya pūrvaṃ bodhisattvacārikāṃ carata imāni dvādaśa mahāpraṇidhānāny abhūvan | katamāni dvādaśa ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='7135342bi' class='paragraph'>
+							bcom ldan (2)'das kyis de la 'di skad ces bka' stsal to || 'jam dpal śar phyogs logs su saṅs rgyas kyi źiṅ 'di nas saṅs rgyas kyi źiṅ gaṅ gā'i kluṅ bcu'i bye ma sñed 'das pa na 'jig rten gyi khams bai ḍū rya'i snaṅ ba źes bya ba yod de |&nbsp;</span><span id='7135343bi' class='paragraph'>
+						 de na de bźin gśegs pa dgra (3)bcom pa yaṅ dag par rdzogs pa'i saṅs rgyas rig pa daṅ źabs su ldan pa | bde bar gśegs pa | 'jig rten mkhyen pa | skyes bu 'dul ba'i kha lo sgyur ba | bla na med pa | lha daṅ mi rnams kyi ston pa | saṅs rgyas bcom ldan 'das sman gyi bla (4)bai ḍū rya'i 'od kyi rgyal po źes bya ba bźugs so || 'jam dpal bcom ldan 'das de bźin gśegs pa sman gyi bla bai ḍū rya'i 'od de | sṅon byaṅ chub sems dpa'i spyad pa spyod pa na smon lam chen po bcu gñis po 'di dag btab bo || bcu gñis gaṅ źe na |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135468bi' class='paragraph'>
+							(401b20)佛告曼殊室利：「東方過此佛土十恒河沙等佛土之外，有世界名淨琉璃，&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7135461";
+							kilderef = "BhG T. 449  404c13 - T. 449 401b20";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					<span id='7135469bi' class='paragraph'>
+						 彼土有佛，名藥師琉璃光如來、應、正遍知、明行足、善逝、世間解、無上士、調御丈夫、天人師、佛、世尊。(401b24) 「曼殊室利！彼世尊藥師琉璃光如來本行菩薩行時，發十二大願。何者十二？」&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='7135594bi' class='paragraph'>
+							(405a01)佛告曼殊室利：「東方去此過十殑伽沙等佛土，有世界名淨琉璃，&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7135587";
+							kilderef = "BhG T. 450  404c13 - T. 450 405a01";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					<span id='7135595bi' class='paragraph'>
+						 佛號藥師琉璃光如來、應、正等覺、明行圓滿、善逝、世間解、無上丈夫、調御士、天人師、佛、薄伽梵。曼殊室利！彼佛世尊藥師琉璃光如來，本行菩薩道時，發十二大願，令諸有情，所求皆得。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class=''><span id='bi' class=''>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "  ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=cb57335a-88f2-11e7-8793-0050569f23b2</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
